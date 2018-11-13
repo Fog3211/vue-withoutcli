@@ -1,6 +1,7 @@
 //webpack.config.js
-var webpack = require('webpack')
+const webpack = require('webpack')
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	entry: __dirname + '/src/main.js',
@@ -43,12 +44,24 @@ module.exports = {
 			'@': path.resolve(__dirname, "src")
 		}
 	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
+		new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'index.html',
+            inject: true,
+            title: "vue-withoutcli",
+            hash: true,
+        })
+	],
 	devServer: {
 		contentBase: './dist',
 		stats: {
 			colors: true
 		},
 		historyApiFallback: true,
-		inline: true
+		inline: true,
+		open:true,
+		hot:true
 	}
 }
