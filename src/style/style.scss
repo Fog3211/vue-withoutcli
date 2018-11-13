@@ -1,9 +1,11 @@
-*{
+$bgColor: aquamarine;
+
+* {
     margin: 0 auto;
     padding: 0;
     text-decoration: none;
     list-style: none;
     font-size: 24px;
-    background-color: blueviolet;
+    background-color: $bgColor;
     text-align: center;
 }

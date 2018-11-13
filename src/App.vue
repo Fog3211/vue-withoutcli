@@ -14,7 +14,8 @@ export default {
 };
 </script>
 
-<style>
-@import "~@/style/style.css";
-/* @import "./style/style.css"; */
+<style lang="scss">
+//  @import "~@/style/style.css"; 
+// @import "~@/style/style.less"; 
+@import "~@/style/style.scss";
 </style>

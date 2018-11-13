@@ -1,7 +1,7 @@
 {
   "name": "vue-withoutcli",
   "version": "1.0.0",
-  "description": "",
+  "description": "不使用vue-cli搭建一个vue项目",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,17 +12,31 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.1",
+    "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^1.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "vue": "^2.5.17",
-    "vue-loader": "^13.7.3",
-    "vue-router": "^2.8.1",
+    "vue-loader": "^15.4.2",
+    "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.17",
-    "webpack": "^3.12.0",
-    "webpack-dev-server": "^2.11.2"
-  }
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=6.11.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
